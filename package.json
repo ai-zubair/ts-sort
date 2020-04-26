@@ -1,0 +1,19 @@
+{
+  "name": "ts-sort",
+  "version": "1.0.0",
+  "description": "Generic Sorting algorithm written in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ai-zubair/ts-sort.git"
+  },
+  "author": "Zubair Bashir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ai-zubair/ts-sort/issues"
+  },
+  "homepage": "https://github.com/ai-zubair/ts-sort#readme"
+}
