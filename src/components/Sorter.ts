@@ -1,20 +1,16 @@
-interface Sortable{
-  length: number;
-  compare(leftIndex: number, rightIndex: number): boolean;
-  swap(leftIndex: number, rightIndex: number): void;
-}
+abstract class Sorter{
 
-class Sorter{
-
-  constructor(public collection: Sortable){}
+  abstract compare(leftIndex: number, rightIndex: number): boolean;
+  abstract swap(leftIndex: number, rightIndex: number): void;
+  abstract length: number;
 
   sort(): void{ //uses bubble sort
-    const { length } = this.collection; //array is essentially an object with a length property
+    const { length } = this; 
 
     for (let i = 0; i < length; i++) {
       for (let j = 0; j < length - 1 - i; j++) {
-        if( this.collection.compare(j,j+1) ){
-          this.collection.swap(j,j+1);
+        if( this.compare(j,j+1) ){
+          this.swap(j,j+1);
         } 
       } 
     }

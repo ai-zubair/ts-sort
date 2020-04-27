@@ -1,6 +1,9 @@
-class CharacterCollection{
+import { Sorter } from "./Sorter";
+
+class CharacterCollection extends Sorter{
 
   constructor(public data: string){
+    super();
   }
 
   get length(): number{

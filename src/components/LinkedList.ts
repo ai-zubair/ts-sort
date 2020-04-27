@@ -1,3 +1,5 @@
+import { Sorter } from "./Sorter";
+
 /* Represents a node within a linked list */
 class ListNode {
   value: number;  /* assuming a linked lost of numbers */
@@ -9,7 +11,7 @@ class ListNode {
 
 }
 
-class LinkedList{
+class LinkedList extends Sorter{
   head: ListNode | null = null; /* linked list is empty by default */
   
   /* constructor not needed cause no customised initialiasation */

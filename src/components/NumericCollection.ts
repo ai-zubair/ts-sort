@@ -1,6 +1,9 @@
-class NumericCollection{
+import { Sorter } from "./Sorter";
+
+class NumericCollection extends Sorter{
 
   constructor(public data: number[]){
+    super();
   }
 
   get length(): number{
