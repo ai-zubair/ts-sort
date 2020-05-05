@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ai-zubair/ts-sort#readme",
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.3",
+    "typescript": "^3.8.3"
   }
 }
